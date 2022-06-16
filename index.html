@@ -27,21 +27,12 @@
 
 <body>
 
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+    <div class="p-3 text-white bg-dark" style="width: 300px;">
 
         <div class="h3">
             <i class="fa-solid fa-note-sticky mr-4"></i>
             <span class="ml-4">Sticky Notes </span>
         </div>
-        <hr>
-
-        <div>
-            <a href="#" class="text-decoration-none text-white" onclick="add_note()">
-                <i class="fa-solid fa-circle-plus mr-4"></i> Add note
-            </a>
-        </div>
-
-
         <hr>
         <div class="dropdown">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -60,6 +51,17 @@
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
         </div>
+        <hr>
+
+
+
+        <h5>
+            <a href="#" class="text-decoration-none text-white" onclick="add_note()">
+                <i class="fa-solid fa-circle-plus me-2"></i> Add note
+            </a>
+        </h5>
+
+
     </div>
 
     <ul id="board">
