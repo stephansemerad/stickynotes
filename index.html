@@ -41,11 +41,6 @@
             </a>
         </div>
 
-        <div>
-            <a href="#" class="text-decoration-none text-white" onclick="shuffle()">
-                <i class="fa-solid fa-circle-plus mr-4"></i> shuffle
-            </a>
-        </div>
 
         <hr>
         <div class="dropdown">
@@ -69,6 +64,28 @@
 
     <ul id="board">
 
+        <div id="0" onclick="sort_to_last(this.id);" class="sticky_note" style="top:300px; left: 300px">
+            <div id="0_header" class="sticky_note_header" style="background-color: pink;pull-right">
+
+            </div>
+
+
+
+            <textarea>0 This is a sticky note you can type and edit.</textarea>
+            <div class="action">
+                <div class="colors">
+                    <div class="note-yellow"></div>
+                    <div class="note-green"></div>
+                    <div class="note-levendor"></div>
+                    <div class="note-orange"></div>
+                </div>
+                <button type="button" class="btn btn-edit"><i class="fa fa-palette"></i></button>
+                <button type="button" class="btn btn-del"><i class="fa fa-trash"></i></button>
+            </div>
+
+
+        </div>
+
     </ul>
 
 </body>
@@ -77,9 +94,11 @@
 
 <script>
 
-    function shuffle() {
+    function sort_to_last(id) {
+        console.log('id: ', id)
         const list = document.getElementById("board");
-        list.appendChild(list.firstElementChild);
+        var elem = document.getElementById(id)
+        list.appendChild(elem);
     }
 
     var counter = 0;
@@ -91,7 +110,7 @@
         var random_color = Math.floor(Math.random() * 16777215).toString(16);
 
         var sticky_note_template = `
-            <div id="${counter}" class="sticky_note" style="top:200px; left: 200px">
+            <div id="${counter}" onclick="sort_to_last(this.id);" class="sticky_note" style="top:200px; left: 200px">
                 <div id="${counter}_header" class="sticky_note_header" style="background-color: #${random_color};"></div>
                 <textarea>${counter} This is a sticky note you can type and edit.</textarea>
             </div>
@@ -103,6 +122,8 @@
 
         dragElement(counter);
     }
+
+    dragElement(0)
 
     function dragElement(id) {
 
