@@ -18,7 +18,7 @@ textarea {
   font: 18px "Gloria Hallelujah", cursive;
   line-height: 1.5;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0px 0px 4px 4px; /* top-left, top-right, bottom-left, bottom-right */
   background: linear-gradient(#f9efaf, #f7e98d);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -127,42 +127,4 @@ ul {
 .colors div:last-child,
 .note.note-orange {
   background-color: #f18e00;
-}
-.btn-add {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  background-color: #6039e0;
-  color: #fff;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  box-shadow: 0px 0px 0px 4px #6039e066;
-  animation: pulse 2s infinite;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(96, 57, 224, 0.4);
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 10px rgba(96, 57, 224, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(96, 57, 224, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(96, 57, 224, 0.4);
-    box-shadow: 0 0 0 0 rgba(96, 57, 224, 0.4);
-  }
-  70% {
-    -moz-box-shadow: 0 0 0 10px rgba(96, 57, 224, 0);
-    box-shadow: 0 0 0 10px rgba(96, 57, 224, 0);
-  }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(96, 57, 224, 0);
-    box-shadow: 0 0 0 0 rgba(96, 57, 224, 0);
-  }
 }
