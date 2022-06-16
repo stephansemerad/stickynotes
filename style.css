@@ -58,9 +58,15 @@ textarea:focus {
 }
 
 .sticky_note_header {
-  padding: 10px;
+  height: 30px;
   cursor: move;
   z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 10px;
 }
 
 ul {
@@ -77,7 +83,6 @@ ul {
   outline: none;
 }
 .btn-edit {
-  background-color: #fff;
   font-size: 15px;
   border: none;
   color: #1c7fff;
@@ -86,10 +91,8 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 5px #0c0f411a;
 }
 .btn-del {
-  background-color: #fff;
   font-size: 15px;
   border: none;
   color: #fd1f1f;
@@ -98,7 +101,6 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 5px #0c0f411a;
 }
 
 .action {
