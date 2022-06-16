@@ -6,7 +6,7 @@
 
 body {
   margin: 30px;
-  background-color: #1c1d24;
+  background-color: #1c1d24; /*F2F2F2*/
 }
 
 textarea {
@@ -20,12 +20,28 @@ textarea {
   border: 0;
   border-radius: 0px 0px 4px 4px; /* top-left, top-right, bottom-left, bottom-right */
   background: linear-gradient(#f9efaf, #f7e98d);
+  /*
+  dark_purple: 9416AD,
+  purple: BD87C7,
+  dark_pink: F84097, 
+  pink: EA94BA,
+  dark_blue: 3F9BDE,
+  blue: F84097,
+  dark_yellow: FDCB15,
+  yellow: 3F9BDE,
+  green: FDCB15,
+  dark_green: 92D050,
+  turquoise: 68C7C0,
+  dark_turquoise: 10A98B,
+  */
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: box-shadow 0.5s ease;
   resize: both;
   overflow: auto;
 }
+
 textarea:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
 }
@@ -62,23 +78,25 @@ ul {
 }
 .btn-edit {
   background-color: #fff;
+  font-size: 15px;
   border: none;
   color: #1c7fff;
   padding: 0px;
   margin: 5px 2px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 5px #0c0f411a;
 }
 .btn-del {
   background-color: #fff;
+  font-size: 15px;
   border: none;
   color: #fd1f1f;
   padding: 0px;
   margin: 5px 2px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 5px #0c0f411a;
 }

@@ -96,6 +96,9 @@
 
 <script>
 
+
+
+
     function sort_to_last(id) {
         console.log('id: ', id)
         const list = document.getElementById("board");
@@ -109,13 +112,29 @@
     function add_note() {
         counter = counter + 1; // 0+ 1 =1
 
+        const colors = {
+            'purple': { 'light': '#BD87C7', 'dark': '#9416AD' },
+            'pink': { 'light': '#EA94BA', 'dark': '#F84097' },
+            'blue': { 'light': '#A7CBF3', 'dark': '#3F9BDE' },
+            'yellow': { 'light': '#F4D32B', 'dark': '#FDCB15' },
+            'green': { 'light': '#CAE057', 'dark': '#92D050' },
+            'turquoise': { 'light': '#68C7C0', 'dark': '#10A98B' },
+        }
+        var keys = Object.keys(colors);
+        var random = colors[keys[keys.length * Math.random() << 0]];
+
+        console.log('random: ', random.light)
+
+
+        // console.log(random, months[random]);
+
 
         var random_color = Math.floor(Math.random() * 16777215).toString(16);
 
         var sticky_note_template = `
             <div id="${counter}" onclick="sort_to_last(this.id);" class="sticky_note" style="top:200px; left: 200px">
-                <div id="${counter}_header" class="sticky_note_header" style="background-color: #${random_color};"></div>
-                <textarea>${counter} This is a sticky note you can type and edit.</textarea>
+                <div id="${counter}_header" class="sticky_note_header" style="background-color: ${random.dark};"></div>
+                <textarea style="background: linear-gradient(${random.light}, #f7e98d);">${counter} This is a sticky note you can type and edit.</textarea>
             </div>
         `;
 
