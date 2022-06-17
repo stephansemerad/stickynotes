@@ -148,3 +148,25 @@ ul {
 .note.note-orange {
   background-color: #f18e00;
 }
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: None;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c1d24;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1d24;
+}
